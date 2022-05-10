@@ -6,11 +6,11 @@
 <!-- https://answers.ros.org/question/273947/moving-joints-in-gazebo-simple-example/
 	here is a good explanation  -->
 <robot
-  name="modulessai">
+  name="serpent_gazebo">
   
        <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/modulessai</robotNamespace>
+      <robotNamespace>/serpent_gazebo</robotNamespace>
     </plugin>
   </gazebo>
   
@@ -55,7 +55,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/shell1.STL" />
+          filename="package://serpent_gazebo/meshes/shell1.STL" />
       </geometry>
       <material
         name="">
@@ -69,7 +69,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/shell1.STL" />
+          filename="package://serpent_gazebo/meshes/shell1.STL" />
       </geometry>
     </collision>
   </link>
@@ -97,7 +97,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/joint_enclosure1.STL" />
+          filename="package://serpent_gazebo/meshes/joint_enclosure1.STL" />
       </geometry>
       <material
         name="">
@@ -111,7 +111,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/joint_enclosure1.STL" />
+          filename="package://serpent_gazebo/meshes/joint_enclosure1.STL" />
       </geometry>
     </collision>
   </link>
@@ -154,7 +154,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale1.STL" />
+          filename="package://serpent_gazebo/meshes/scale1.STL" />
       </geometry>
       <material
         name="">
@@ -168,7 +168,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale1.STL" />
+          filename="package://serpent_gazebo/meshes/scale1.STL" />
       </geometry>
     </collision>
   </link>
@@ -211,7 +211,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale2.STL" />
+          filename="package://serpent_gazebo/meshes/scale2.STL" />
       </geometry>
       <material
         name="">
@@ -225,7 +225,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale2.STL" />
+          filename="package://serpent_gazebo/meshes/scale2.STL" />
       </geometry>
     </collision>
   </link>
@@ -268,7 +268,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale3.STL" />
+          filename="package://serpent_gazebo/meshes/scale3.STL" />
       </geometry>
       <material
         name="">
@@ -282,7 +282,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale3.STL" />
+          filename="package://serpent_gazebo/meshes/scale3.STL" />
       </geometry>
     </collision>
   </link>
@@ -325,7 +325,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale4.STL" />
+          filename="package://serpent_gazebo/meshes/scale4.STL" />
       </geometry>
       <material
         name="">
@@ -339,7 +339,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale4.STL" />
+          filename="package://serpent_gazebo/meshes/scale4.STL" />
       </geometry>
     </collision>
   </link>
@@ -382,7 +382,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_clip1.STL" />
+          filename="package://serpent_gazebo/meshes/slide_clip1.STL" />
       </geometry>
       <material
         name="">
@@ -396,7 +396,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_clip1.STL" />
+          filename="package://serpent_gazebo/meshes/slide_clip1.STL" />
       </geometry>
     </collision>
   </link>
@@ -439,7 +439,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_clip2.STL" />
+          filename="package://serpent_gazebo/meshes/slide_clip2.STL" />
       </geometry>
       <material
         name="">
@@ -453,7 +453,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_clip2.STL" />
+          filename="package://serpent_gazebo/meshes/slide_clip2.STL" />
       </geometry>
     </collision>
   </link>
@@ -496,7 +496,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_arm.STL" />
+          filename="package://serpent_gazebo/meshes/slide_arm.STL" />
       </geometry>
       <material
         name="">
@@ -510,7 +510,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_arm.STL" />
+          filename="package://serpent_gazebo/meshes/slide_arm.STL" />
       </geometry>
     </collision>
   </link>
@@ -553,7 +553,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_key.STL" />
+          filename="package://serpent_gazebo/meshes/slide_key.STL" />
       </geometry>
       <material
         name="">
@@ -567,15 +567,16 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_key.STL" />
+          filename="package://serpent_gazebo/meshes/slide_key.STL" />
       </geometry>
     </collision>
   </link>
   
-  
+    <!-- name="link9"
+    type="fixed" -->
   <joint
-    name="link9"
-    type="fixed">
+    name="serpent_main_joint"
+    type="continuous">
     <origin
       xyz="-0.138611885720102 0.0896074988950939 -0.214616884182071"
       rpy="-1.5529323841969 0 -3.14159265358979" />
@@ -610,7 +611,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale5.STL" />
+          filename="package://serpent_gazebo/meshes/scale5.STL" />
       </geometry>
       <material
         name="">
@@ -624,7 +625,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale5.STL" />
+          filename="package://serpent_gazebo/meshes/scale5.STL" />
       </geometry>
     </collision>
   </link>
@@ -667,7 +668,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale6.STL" />
+          filename="package://serpent_gazebo/meshes/scale6.STL" />
       </geometry>
       <material
         name="">
@@ -681,7 +682,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale6.STL" />
+          filename="package://serpent_gazebo/meshes/scale6.STL" />
       </geometry>
     </collision>
   </link>
@@ -724,7 +725,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale7.STL" />
+          filename="package://serpent_gazebo/meshes/scale7.STL" />
       </geometry>
       <material
         name="">
@@ -738,7 +739,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale7.STL" />
+          filename="package://serpent_gazebo/meshes/scale7.STL" />
       </geometry>
     </collision>
   </link>
@@ -781,7 +782,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale8.STL" />
+          filename="package://serpent_gazebo/meshes/scale8.STL" />
       </geometry>
       <material
         name="">
@@ -795,7 +796,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale8.STL" />
+          filename="package://serpent_gazebo/meshes/scale8.STL" />
       </geometry>
     </collision>
   </link>
@@ -838,7 +839,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_key_joint1.STL" />
+          filename="package://serpent_gazebo/meshes/slide_key_joint1.STL" />
       </geometry>
       <material
         name="">
@@ -852,7 +853,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_key_joint1.STL" />
+          filename="package://serpent_gazebo/meshes/slide_key_joint1.STL" />
       </geometry>
     </collision>
   </link>
@@ -895,7 +896,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/joint_enclosure2.STL" />
+          filename="package://serpent_gazebo/meshes/joint_enclosure2.STL" />
       </geometry>
       <material
         name="">
@@ -909,7 +910,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/joint_enclosure2.STL" />
+          filename="package://serpent_gazebo/meshes/joint_enclosure2.STL" />
       </geometry>
     </collision>
   </link>
@@ -952,7 +953,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/shell2.STL" />
+          filename="package://serpent_gazebo/meshes/shell2.STL" />
       </geometry>
       <material
         name="">
@@ -966,7 +967,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/shell2.STL" />
+          filename="package://serpent_gazebo/meshes/shell2.STL" />
       </geometry>
     </collision>
   </link>
@@ -1009,7 +1010,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale9.STL" />
+          filename="package://serpent_gazebo/meshes/scale9.STL" />
       </geometry>
       <material
         name="">
@@ -1023,7 +1024,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale9.STL" />
+          filename="package://serpent_gazebo/meshes/scale9.STL" />
       </geometry>
     </collision>
   </link>
@@ -1066,7 +1067,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale10.STL" />
+          filename="package://serpent_gazebo/meshes/scale10.STL" />
       </geometry>
       <material
         name="">
@@ -1080,7 +1081,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale10.STL" />
+          filename="package://serpent_gazebo/meshes/scale10.STL" />
       </geometry>
     </collision>
   </link>
@@ -1123,7 +1124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale11.STL" />
+          filename="package://serpent_gazebo/meshes/scale11.STL" />
       </geometry>
       <material
         name="">
@@ -1137,7 +1138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale11.STL" />
+          filename="package://serpent_gazebo/meshes/scale11.STL" />
       </geometry>
     </collision>
   </link>
@@ -1180,7 +1181,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale12.STL" />
+          filename="package://serpent_gazebo/meshes/scale12.STL" />
       </geometry>
       <material
         name="">
@@ -1194,7 +1195,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale12.STL" />
+          filename="package://serpent_gazebo/meshes/scale12.STL" />
       </geometry>
     </collision>
   </link>
@@ -1237,7 +1238,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_clip3.STL" />
+          filename="package://serpent_gazebo/meshes/slide_clip3.STL" />
       </geometry>
       <material
         name="">
@@ -1251,7 +1252,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_clip3.STL" />
+          filename="package://serpent_gazebo/meshes/slide_clip3.STL" />
       </geometry>
     </collision>
   </link>
@@ -1294,7 +1295,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_arm2.STL" />
+          filename="package://serpent_gazebo/meshes/slide_arm2.STL" />
       </geometry>
       <material
         name="">
@@ -1308,7 +1309,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_arm2.STL" />
+          filename="package://serpent_gazebo/meshes/slide_arm2.STL" />
       </geometry>
     </collision>
   </link>
@@ -1351,7 +1352,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_clip4.STL" />
+          filename="package://serpent_gazebo/meshes/slide_clip4.STL" />
       </geometry>
       <material
         name="">
@@ -1365,7 +1366,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_clip4.STL" />
+          filename="package://serpent_gazebo/meshes/slide_clip4.STL" />
       </geometry>
     </collision>
   </link>
@@ -1408,7 +1409,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_key2.STL" />
+          filename="package://serpent_gazebo/meshes/slide_key2.STL" />
       </geometry>
       <material
         name="">
@@ -1422,7 +1423,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_key2.STL" />
+          filename="package://serpent_gazebo/meshes/slide_key2.STL" />
       </geometry>
     </collision>
   </link>
@@ -1465,7 +1466,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_key_joint_2.STL" />
+          filename="package://serpent_gazebo/meshes/slide_key_joint_2.STL" />
       </geometry>
       <material
         name="">
@@ -1479,7 +1480,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/slide_key_joint_2.STL" />
+          filename="package://serpent_gazebo/meshes/slide_key_joint_2.STL" />
       </geometry>
     </collision>
   </link>
@@ -1522,7 +1523,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/Slide_key_joint_single2.STL" />
+          filename="package://serpent_gazebo/meshes/Slide_key_joint_single2.STL" />
       </geometry>
       <material
         name="">
@@ -1536,7 +1537,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/Slide_key_joint_single2.STL" />
+          filename="package://serpent_gazebo/meshes/Slide_key_joint_single2.STL" />
       </geometry>
     </collision>
   </link>
@@ -1579,7 +1580,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale13.STL" />
+          filename="package://serpent_gazebo/meshes/scale13.STL" />
       </geometry>
       <material
         name="">
@@ -1593,7 +1594,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale13.STL" />
+          filename="package://serpent_gazebo/meshes/scale13.STL" />
       </geometry>
     </collision>
   </link>
@@ -1636,7 +1637,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale14.STL" />
+          filename="package://serpent_gazebo/meshes/scale14.STL" />
       </geometry>
       <material
         name="">
@@ -1650,7 +1651,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale14.STL" />
+          filename="package://serpent_gazebo/meshes/scale14.STL" />
       </geometry>
     </collision>
   </link>
@@ -1693,7 +1694,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale15.STL" />
+          filename="package://serpent_gazebo/meshes/scale15.STL" />
       </geometry>
       <material
         name="">
@@ -1707,7 +1708,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale15.STL" />
+          filename="package://serpent_gazebo/meshes/scale15.STL" />
       </geometry>
     </collision>
   </link>
@@ -1750,7 +1751,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale16.STL" />
+          filename="package://serpent_gazebo/meshes/scale16.STL" />
       </geometry>
       <material
         name="">
@@ -1764,7 +1765,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/scale16.STL" />
+          filename="package://serpent_gazebo/meshes/scale16.STL" />
       </geometry>
     </collision>
   </link>
@@ -1807,7 +1808,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/Slide_key_joint_single1.STL" />
+          filename="package://serpent_gazebo/meshes/Slide_key_joint_single1.STL" />
       </geometry>
       <material
         name="">
@@ -1821,7 +1822,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modulessai/meshes/Slide_key_joint_single1.STL" />
+          filename="package://serpent_gazebo/meshes/Slide_key_joint_single1.STL" />
       </geometry>
     </collision>
   </link>

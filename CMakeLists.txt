@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(modulessai)
+project(serpent_gazebo)
 
 find_package(catkin REQUIRED)
 

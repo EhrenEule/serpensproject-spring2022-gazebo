@@ -1,4 +1,4 @@
-modulessai:
+serpent_gazebo:
 
   joint_state_controller:
     type: joint_state_controller/JointStateController
