@@ -13,26 +13,26 @@
       <robotNamespace>/serpent_gazebo</robotNamespace>
     </plugin>
   </gazebo>
-  
-    <!-- transmission -->
-  <transmission name="serpent_main_trans">
+ 
+    <!-- transmission 
+  <transmission name="serpent_joint_1_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <actuator name="motor1">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
-    <joint name="serpent_main_joint">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    <joint name="serpent_joint_1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
-  </transmission>
+  </transmission> -->
 
   
-  <link name= "base_footprint" />
+  <link name= "dummy" />
   
-  <joint name="base_footprint_joint" type="fixed">
-    <parent link="base_footprint" />
+  <joint name="dummy_joint" type="fixed">
+    <parent link="dummy" />
     <child link="shell1" />
   	</joint>
-  
+ 
   <link
     name="shell1">
     <inertial>
@@ -47,8 +47,8 @@
         ixz="4.80846729441766E-06"
         iyy="0.000295272937582447"
         iyz="-7.25953669690205E-06"
-        izz="0.000232451898515766" /> 
-    </inertial> 
+        izz="0.000232451898515766" />
+    </inertial>
     <visual>
       <origin
         xyz="0 0 0"
@@ -73,8 +73,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <link
     name="joint_enclosure1">
     <inertial>
@@ -115,8 +113,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link1"
     type="fixed">
@@ -130,8 +126,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale1">
     <inertial>
@@ -172,8 +166,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link2"
     type="fixed">
@@ -187,8 +179,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale2">
     <inertial>
@@ -229,8 +219,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link3"
     type="fixed">
@@ -244,8 +232,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale3">
     <inertial>
@@ -286,8 +272,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link4"
     type="fixed">
@@ -301,8 +285,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale4">
     <inertial>
@@ -343,8 +325,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link5"
     type="fixed">
@@ -358,8 +338,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="slide_clip1">
     <inertial>
@@ -400,8 +378,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link6"
     type="fixed">
@@ -415,8 +391,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="slide_clip2">
     <inertial>
@@ -457,8 +431,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link7"
     type="fixed">
@@ -472,8 +444,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="slide_arm">
     <inertial>
@@ -514,8 +484,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link8"
     type="fixed">
@@ -529,8 +497,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="slide_key">
     <inertial>
@@ -571,12 +537,9 @@
       </geometry>
     </collision>
   </link>
-  
-    <!-- name="link9"
-    type="fixed" -->
   <joint
-    name="serpent_main_joint"
-    type="continuous">
+    name="link9"
+    type="fixed">
     <origin
       xyz="-0.138611885720102 0.0896074988950939 -0.214616884182071"
       rpy="-1.5529323841969 0 -3.14159265358979" />
@@ -587,8 +550,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale5">
     <inertial>
@@ -629,8 +590,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link10"
     type="fixed">
@@ -644,8 +603,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale6">
     <inertial>
@@ -686,8 +643,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link11"
     type="fixed">
@@ -701,8 +656,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale7">
     <inertial>
@@ -743,8 +696,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link12"
     type="fixed">
@@ -758,8 +709,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale8">
     <inertial>
@@ -800,8 +749,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link13"
     type="fixed">
@@ -815,8 +762,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="slide_key_joint1">
     <inertial>
@@ -857,8 +802,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link14"
     type="fixed">
@@ -872,8 +815,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="joint_enclosure2">
     <inertial>
@@ -914,8 +855,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link16"
     type="fixed">
@@ -929,8 +868,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="shell2">
     <inertial>
@@ -971,8 +908,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link17"
     type="fixed">
@@ -986,8 +921,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale9">
     <inertial>
@@ -1028,8 +961,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link18"
     type="fixed">
@@ -1043,8 +974,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale10">
     <inertial>
@@ -1085,8 +1014,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link19"
     type="fixed">
@@ -1100,8 +1027,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale11">
     <inertial>
@@ -1142,8 +1067,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link20"
     type="fixed">
@@ -1157,8 +1080,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale12">
     <inertial>
@@ -1199,8 +1120,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link21"
     type="fixed">
@@ -1214,8 +1133,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="slide_clip3">
     <inertial>
@@ -1256,8 +1173,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link22"
     type="fixed">
@@ -1271,8 +1186,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="slide_arm2">
     <inertial>
@@ -1313,8 +1226,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link24"
     type="fixed">
@@ -1328,8 +1239,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="slide_clip4">
     <inertial>
@@ -1370,8 +1279,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link23"
     type="fixed">
@@ -1385,8 +1292,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="slide_key2">
     <inertial>
@@ -1427,8 +1332,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link25"
     type="fixed">
@@ -1442,8 +1345,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="slide_key_joint_2">
     <inertial>
@@ -1484,8 +1385,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link26"
     type="fixed">
@@ -1499,8 +1398,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="Slide_key_joint_single2">
     <inertial>
@@ -1541,8 +1438,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link27"
     type="fixed">
@@ -1556,8 +1451,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale13">
     <inertial>
@@ -1598,8 +1491,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link28"
     type="fixed">
@@ -1613,8 +1504,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale14">
     <inertial>
@@ -1655,8 +1544,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link29"
     type="fixed">
@@ -1670,8 +1557,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale15">
     <inertial>
@@ -1712,8 +1597,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link30"
     type="fixed">
@@ -1727,8 +1610,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="scale16">
     <inertial>
@@ -1769,8 +1650,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link31"
     type="fixed">
@@ -1784,8 +1663,6 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
   <link
     name="Slide_key_joint_single1">
     <inertial>
@@ -1826,8 +1703,6 @@
       </geometry>
     </collision>
   </link>
-  
-  
   <joint
     name="link15"
     type="fixed">
@@ -1841,8 +1716,4 @@
     <axis
       xyz="0 0 0" />
   </joint>
-  
-  
-  
-
 </robot>
