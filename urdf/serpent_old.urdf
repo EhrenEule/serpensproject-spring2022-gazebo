@@ -5,56 +5,50 @@
 <robot
   name="serpent">
   
-   <gazebo>
+     <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/serpent_gazebo</robotNamespace>  
-      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <robotNamespace>/serpent_gazebo</robotNamespace>
     </plugin>
   </gazebo>
  
+   
   <transmission name="serpent_joint_1_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <actuator name="motor1">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
     <joint name="serpent_joint_1">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
   </transmission> 
   
-    <link name="world" />
   
-  <joint name="world_to_base_link" type="fixed">
+  <link name="world" />
+  
+  <joint name="dummy_link" type="fixed">
     <parent link="world"/>
-    <child link="base_link"/>
-  </joint>
-  
-  <link name="base_link"/>
-  
-  <joint name="base_link_to_chassis" type="fixed">
-    <parent link="base_link"/>
     <child link="BOTTOM"/>
   </joint>
   
   <link
     name="BOTTOM">
     <inertial>
-        <origin
-        xyz="0.0031373499123086 -0.0419505748550409 0.00474622649736091"
+      <origin
+        xyz="-0.00313734991230859 -0.00474622649736089 0.0419505748550408"
         rpy="0 0 0" />
       <mass
         value="0.248846427803799" />
       <inertia
         ixx="0.000337065099453283"
-        ixy="4.81639331367406E-06"
-        ixz="-7.0456595236777E-07"
-        iyy="0.000319081784729365"
-        iyz="-8.2135533587163E-06"
-        izz="0.00043528469589621" />
+        ixy="-7.04565952367779E-07"
+        ixz="4.81639331367407E-06"
+        iyy="0.00043528469589621"
+        iyz="-8.21355335871629E-06"
+        izz="0.000319081784729365" />
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0.1"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -68,7 +62,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0.1"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -76,21 +70,22 @@
       </geometry>
     </collision>
   </link>
+  -->
   <link
     name="TOP">
     <inertial>
       <origin
-        xyz="0.00351440727191472 -0.105873568533032 -0.0382561697614232"
+        xyz="0.00351440727191355 -0.112572278209649 -0.000478766564033797"
         rpy="0 0 0" />
       <mass
-        value="0.503745908624563" />
+        value="0.503745908624564" />
       <inertia
-        ixx="0.00216516689167982"
-        ixy="-4.29217088273363E-06"
-        ixz="3.92669667205899E-06"
-        iyy="0.0010482216585128"
-        iyz="-0.000426790051703255"
-        izz="0.00203810975898651" />
+        ixx="0.00216516689167981"
+        ixy="-2.7241873369572E-06"
+        ixz="5.1400856991087E-06"
+        iyy="0.000889853519288545"
+        iyz="-1.73937977239561E-05"
+        izz="0.00219647789821076" />
     </inertial>
     <visual>
       <origin
@@ -116,12 +111,13 @@
       </geometry>
     </collision>
   </link>
+  
   <joint
     name="serpent_joint_1"
     type="continuous">
-      <origin
-      xyz="0 -0.044432 0.15577"
-      rpy="-1.8274 0 0" />
+    <origin
+      xyz="0 -0.044432012931505 -0.0505772211610462"
+      rpy="1.31422119136425 0 -3.14159265358979" />
     <parent
       link="BOTTOM" />
     <child
@@ -129,4 +125,5 @@
     <axis
       xyz="1 0 0" />
   </joint>
+  
 </robot>

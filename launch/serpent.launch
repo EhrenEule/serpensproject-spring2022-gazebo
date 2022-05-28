@@ -1,9 +1,14 @@
 <launch>
 	<param name="robot_description" 
 	
-
+	
 	textfile="$(find serpent_gazebo)/urdf/serpent.urdf" />
-	<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model serpent -param robot_description -y -6"/>
+	<node name="urdf_bottom_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model serpent -param robot_description -y -6"/>
+	
+<!-- loads the controllers -->
+<rosparam file="$(find serpent_gazebo)/config/config.yaml" command="load" />
+
+<node name="controller_joint_1_spawner" pkg="controller_manager" type="spawner" ns="/serpent_gazebo" args="serpent_joint_1_position_controller joint_state_controller"/> 
 
 <!-- converts joint states to TF transforms -->
 <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">

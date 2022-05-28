@@ -4,7 +4,8 @@ serpent_gazebo:
     type: joint_state_controller/JointStateController
     publish_rate: 20
   serpent_joint_1_position_controller:
-    type: effort_controllers/JointPositionController
+    type: position_controllers/JointPositionController
     joint: serpent_joint_1
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: {p: 50.0, i: 5.0, d: 5.0}
+ 
 
